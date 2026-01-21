@@ -245,13 +245,15 @@ This modular approach makes it easy to:
 
 ---
 
-## ☕ Support
-
-If this setup has been helpful, consider buying me a coffee:
-
-<a href="https://www.buymeacoffee.com/justaguylinux" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy me a coffee" /></a>
-
-## 📺 Watch on YouTube
-
-Want to see how it looks and works?  
-🎥 Check out [JustAGuy Linux on YouTube](https://www.youtube.com/@JustAGuyLinux)
+## Changing Themes
+- In order to change themes, you will need to either change the #include-file lines in the polybar and i3 configs by hand or use my i3-ricer script.
+- 
+- Note: I use absolute paths in both places. Make sure you change the paths for your system or nothing will work.
+- 
+- Because of the way my script works, both my i3 and polybar configs are configured to pull from a theme file. The theme files (in their respective theme directories) are copied to those theme place holder files. So to change a theme by hand, cp the theme's config file to the theme place holder.
+- 
+- Example: cp themes/onedark.conf theme.conf (for i3)
+- 
+- Example: cp polybar/themes/configs/onedark config.ini
+- 
+- Also note that the polybar folder in this directory is a symlink, and therefore should not be trusted
