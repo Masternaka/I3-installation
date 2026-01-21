@@ -246,6 +246,7 @@ This modular approach makes it easy to:
 ---
 
 ## Changing Themes
+
 - In order to change themes, you will need to either change the #include-file lines in the polybar and i3 configs by hand or use my i3-ricer script.
 - 
 - Note: I use absolute paths in both places. Make sure you change the paths for your system or nothing will work.
@@ -257,3 +258,10 @@ This modular approach makes it easy to:
 - Example: cp polybar/themes/configs/onedark config.ini
 - 
 - Also note that the polybar folder in this directory is a symlink, and therefore should not be trusted
+
+---
+
+## 🎨 Définir les variables d'environnement telles que le terminal, navigateur web, l'éditeur de texte
+
+- Pour définir des variables d'environnement telles que le terminal, le navigateur web et l'éditeur de texte par défaut, vous pouvez modifier le fichier `~/.etc/environment/ ou `~/.bashrc` (ou le fichier de configuration de votre shell préféré) et ajouter les lignes de configuration (voir mon .bashrc pour des exemples).
+
